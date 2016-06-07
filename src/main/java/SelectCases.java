@@ -25,7 +25,7 @@ public class SelectCases  {
     }
 
     public static ArrayList<String> selectedTestCases(String path, int count) throws Exception {
-        ArrayList<String> lines = new ArrayList<>();
+        ArrayList<String> lines = new ArrayList<String>();
         BufferedReader reader = new BufferedReader(new FileReader(path));
         for (int i = 0; i < count; i++) {
             lines.add(reader.readLine());
@@ -35,7 +35,7 @@ public class SelectCases  {
     }
 
     public static ArrayList<String> selectedTestCases(String path) throws Exception {
-        ArrayList<String> lines = new ArrayList<>();
+        ArrayList<String> lines = new ArrayList<String>();
         BufferedReader reader = new BufferedReader(new FileReader(path));
         for (int i = 0; i < 10; i++) {
             lines.add(reader.readLine());
